@@ -53,7 +53,7 @@ def callback_choose_language(call):
 
     markup = types.InlineKeyboardMarkup()
     get_word_button = types.InlineKeyboardButton(text=phrases[user_language]['learn_word_button'], callback_data='get_word')
-    developer_button = types.InlineKeyboardButton(text=phrases[user_language]['developer_button'], url='https://t.me/pizzaway')
+    developer_button = types.InlineKeyboardButton(text=phrases[user_language]['developer_button'], url='https://t.me/worpli')
     markup.add(get_word_button, developer_button)
     bot.send_message(call.message.chat.id, phrases[user_language]['button_text'], reply_markup=markup)
 
